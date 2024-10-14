@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#b1").click(function(){
+            alert($("#id1").val());
+        });
+
+        $("#b2").click(function(){
+            alert($("#id2").val());
+        });
+
+        $("#b3").click(function(){
+            alert($("#id3").val());
+        });
+            
+      });
+    </script>
+    <style>
+        button{
+
+            background-color: rgb(138, 5, 5);
+            color: aliceblue;
+            font-size: 30px;
+            text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <form>
+    <h2>Employee Details</h2>
+    <p>Employee name: <input type="text" id="id1"> </p>
+    <p>Employee department: <input type="text" id="id2"> </p>
+    <p>Employee zone: <input type="text" id="id3"> </p>
+    <button id="b1">Submit1</button>
+    <button id="b2">Submit2</button>
+    <button id="b3">Submit3</button>
+</form>
+</body>
+</html>

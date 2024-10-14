@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".class1").click(function(){
+                $("h4").hide();
+            });
+            $(".class2").click(function(){
+                $("h4").show();
+            });
+            $("#p1").mouseenter(function(){
+                alert("You have hovered at this area")
+            });
+        });
+     
+    </script>
+<body>
+    <h1>Let us have fun</h1>
+    <h5 class="class1">Hide Text</h5>
+    <h5 class="class2">Show Text</h5>
+    <h4>I like suprises !!</h4>
+    <p id="p1">Enter this paragraph.</p>
+</body>
+</html>

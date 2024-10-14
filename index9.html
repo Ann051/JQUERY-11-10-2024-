@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+           $(".b1").click(function(){
+            alert($("#demo").text())
+           }) ;
+           $(".b2").click(function(){
+            alert($("#demo").html())
+           });
+      });
+    </script>
+    <style>
+        #demo{
+            background-color: black;
+            color: aliceblue;
+            font-size: 22px;
+        }
+
+        button{
+
+            background-color: rgb(138, 5, 5);
+            color: aliceblue;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>GET</h1>
+    <p id="demo">This is a <em>demo text</em>. this is another <strong>demo text</strong></p>
+    <p>Click the below button to get the text content or HTML content of the above line</p>
+    <button class="b1">Text</button>
+    <button class="b2">HTML</button>
+</body>
+</html>
